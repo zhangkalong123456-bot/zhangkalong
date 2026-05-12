@@ -1,0 +1,50 @@
+.settings-page {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.settings-page h1 {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: var(--text-bright);
+  margin-bottom: 24px;
+}
+
+.settings-section {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px;
+  margin-bottom: 16px;
+}
+
+.settings-section h3 {
+  font-size: 1rem;
+  color: var(--text-bright);
+  margin-bottom: 8px;
+}
+
+.settings-hint {
+  font-size: 0.85rem;
+  color: var(--text-dim);
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+
+.api-key-row {
+  display: flex;
+  gap: 8px;
+}
+
+.api-key-row input { flex: 1; }
+
+.save-status {
+  display: inline-block;
+  margin-top: 6px;
+  font-size: 0.8rem;
+  color: var(--success);
+}
+
+.save-status.existing {
+  color: var(--text-dim);
+}

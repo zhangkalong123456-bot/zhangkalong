@@ -1,0 +1,103 @@
+.home-page {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.home-hero {
+  text-align: center;
+  padding: 40px 0 20px;
+}
+
+.home-title {
+  font-size: 2.8rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 8px;
+}
+
+.home-subtitle {
+  font-size: 1.2rem;
+  color: var(--text);
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.home-desc {
+  color: var(--text-dim);
+  font-size: 0.95rem;
+}
+
+.home-modules {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.module-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 20px 24px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  text-decoration: none;
+  color: var(--text);
+  transition: all 0.2s;
+}
+
+.module-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--primary);
+}
+
+.module-primary:hover { border-color: var(--primary); }
+.module-accent:hover { border-color: var(--accent); }
+.module-success:hover { border-color: var(--success); }
+
+.module-icon { font-size: 2rem; }
+.module-info { flex: 1; }
+.module-info h3 { font-size: 1.1rem; font-weight: 700; margin-bottom: 4px; }
+.module-info p { font-size: 0.85rem; color: var(--text-dim); }
+.module-arrow { font-size: 1.2rem; color: var(--text-dim); }
+
+.home-features { padding: 20px 0; }
+.home-features h2 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: var(--text-bright);
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.feature-item {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px;
+}
+
+.feature-icon { font-size: 1.5rem; }
+.feature-item h4 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin: 8px 0 4px;
+  color: var(--text-bright);
+}
+.feature-item p { font-size: 0.8rem; color: var(--text-dim); }
+
+@media (max-width: 600px) {
+  .feature-grid { grid-template-columns: 1fr; }
+  .home-title { font-size: 2rem; }
+}
